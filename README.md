@@ -12,7 +12,7 @@ explicando como o código foi organizado
 As capturas de tela do sistema funcionando para compor a galeria de projetos
 <table>
   <tr>
-    <td><img src="src/screenshot/teste durabilidade rochas.png" width="250"></td>
+    <td><img src="src/screenshots/teste de frames para os objetos.png width="250"></td>
     <td><img src="src/screenshot/teste de frames para os objetos.png" width="250"></td>
   </tr>
   <tr>
