@@ -10,7 +10,16 @@ explicando como o código foi organizado
 
 
 As capturas de tela do sistema funcionando para compor a galeria de projetos
-
+<table>
+  <tr>
+    <td><img src="src/screenshot/teste durabilidade rochas.png" width="250"></td>
+    <td><img src="src/screenshot/teste de frames para os objetos.png" width="250"></td>
+  </tr>
+  <tr>
+    <td><img src="src/screenshot/teste direcionamento e durabilidade.png" width="250"></td>
+    <td><img src="src/screenshot/teste interação pedras.png" width="250"></td>
+  </tr>
+</table>
 
 As ferramentas, bibliotecas, frameworks utilizados com as respectivas justificativas para o uso;
 A linguiagem de programação escolhida foi o Python, por conveniencia da disciplina de Introdução a lógica de programação(IP) 
