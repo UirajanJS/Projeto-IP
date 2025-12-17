@@ -34,7 +34,8 @@ As ferramentas, bibliotecas, frameworks utilizados com as respectivas justificat
 A linguiagem de programação escolhida foi o Python, por conveniencia da disciplina de Introdução a lógica de programação(IP) 
 do primeiro período da disciplina de Ciência da Computação do Centro de Informática da UFPE.
 *Módulos:
-O principal módulo utilizado para o desenvolveomento foi o Pygame, por sugestão de praticidade e por permitir desenvolver num curto espaço de tempo.
+O principal módulo utilizado para o desenvolveomento foi o Pygame, por sugestão de praticidade e por permitir desenvolver num curto espaço de tempo, além da 
+flexibilidade de se trabalhar com arte pixelada que também facilita a usabilidade do módulo.
 O módulo random foi utilizado para gerar aleatoriedade(através da função randint()) no que tange a durabilidade das rochas e sua distribuição
 O módulo sys foi utilizado para permitir o controle da tela(fechamento) através da função exit().
 
@@ -42,11 +43,26 @@ A divisão de trabalho dentro do grupo (quem fez o quê);
 
 
 Os conceitos que foram apresentados durante a disciplina e utilizados no projeto (indicando onde foram usados);
+No projeto, excetuando a parte de programação orientada a objeto, todas os conceitos aprendidos foram utilizados direta ou indiretamente,
+sendo portanto destacados na tabela a seguir:
+<table>
+  <tr>
+    <th>CONCEITO APRENDIDO</th>
+    <th>ONDE FOI UTILIZADO</th>
+  </tr>
+  <tr>
+    <td>LAÇOS DE REPETIÇÃO</td>
+    <td>CICLO DE EXECUÇÃO DO JOGO</td>
+  </tr>
+</table>
+
 Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
 Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
 Qual foi o maior desafio enfrentado durante o projeto? Como vocês lidaram com ele?
 
 
 Quais as lições aprendidas durante o projeto?
+Desenvolver um jogo por mais simples que seja,exige muita disciplina, tempo e organização, onde cada etapa otimizada através da cooperação leva a uma
+maior propensão da aplicação ser bem sucedida.
 A curva de aprendizado da ferramenta utilizada é baixa, permitindo o desenvolvimento de jogos simples em poucos dias. 
-A flexibilidade de se trabalhar com arte pixelada também facilita a usabilidade do módulo.
+
