@@ -65,7 +65,7 @@ O módulo sys foi utilizado para permitir o controle da tela(fechamento) atravé
     <td></td>
   </tr>
   <tr>
-    <td>Uirajan José da Silva</tr>
+    <td>Uirajan José da Silva</td>
     <td></td>
   </tr>
 </table>
