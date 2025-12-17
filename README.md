@@ -21,8 +21,8 @@ FASE DE DESENVOLVIMENTO:
     <td><img src="src/screenshots/teste%20direcionamento%20e%20durabilidade.png" width="250"></td>
   </tr>
   <tr>
-    <td><img src="src/screenshot/teste%20direcionamento%20e%20durabilidade.png" width="250"></td>
-    <td><img src="src/screenshot/teste%20interação%20pedras.png" width="250"></td>
+    <td><img src="src/screenshots/teste%20direcionamento%20e%20durabilidade.png" width="250"></td>
+    <td><img src="src/screenshots/teste%20interação%20pedras.png" width="250"></td>
   </tr>
 </table>
 
