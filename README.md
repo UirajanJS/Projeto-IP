@@ -47,6 +47,28 @@ O módulo random foi utilizado para gerar aleatoriedade(através da função ran
 O módulo sys foi utilizado para permitir o controle da tela(fechamento) através da função exit().
 
 #A divisão de trabalho dentro do grupo (quem fez o quê);
+<table>
+  <tr>
+    <th>QUEM</th>
+    <th>O QUE FEZ</th>
+  </tr>
+  <tr>
+    <td>João Victor Presbytero </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Pierre Antônio da Silva</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Rafael Cardoso Clementino de Siqueira</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Uirajan José da Silva</tr>
+    <td></td>
+  </tr>
+</table>
 
 
 #Os conceitos que foram apresentados durante a disciplina e utilizados no projeto (indicando onde foram usados);
