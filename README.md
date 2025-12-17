@@ -8,6 +8,7 @@ João Victor Presbytero <jvpacqg>
 Pierre Antônio da Silva<pas2>
 Rafael Cardoso Clementino de Siqueira <rccs2>
 Uirajan José da Silva <ujs>
+Maria Rosicler Lúcia de Lima <mrll>
 
 #A descrição da arquitetura do projeto:
 O MINECIN é um divertido jogo desenvolvido na linguagem python com a utilização da biblioteca pygame, onde o jogador assume o papel
