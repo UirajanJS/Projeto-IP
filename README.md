@@ -18,7 +18,7 @@ FASE DE DESENVOLVIMENTO:
 <table>
   <tr>
     <td><img src="src/screenshots/teste%20de%20frames%20para%20os%20objetos.png" width="250"></td>
-    <td><img src="src/screenshot/teste%20direcionamento%20e%20durabilidade.png" width="250"></td>
+    <td><img src="src/screenshots/teste%20direcionamento%20e%20durabilidade.png" width="250"></td>
   </tr>
   <tr>
     <td><img src="src/screenshot/teste%20direcionamento%20e%20durabilidade.png" width="250"></td>
