@@ -5,8 +5,10 @@ from sys import exit
 pygame.init()
 
 largura=680
-altura=640
+altura=680
 tela=pygame.display.set_mode((largura, altura))
+
+fonte = pygame.font.SysFont("arial",15,True,False)
 
 #não fazer tamanhos ímpares, por causa da parte da picareta
 x_jog=26
@@ -39,35 +41,42 @@ def mapear():
                 rect_pedras.append(Cobre(x*40,y*40))
             elif objeto=="X":
                 rect_pedras.append(Muro(x*40,y*40))
-            elif objeto=="N":
-                pass
-            else:
-                print("error")
+            rect_pedras[-1].definir()
+            
+
+def espelhar():
+    for y in range(16):
+        for x in range(8):
+            mapa[y][-x-1]=mapa[y][x]
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CLASSES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MINÉRIOS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
-class Pedra:
+class Pedra (pygame.sprite.Sprite):
     def __init__(self,x_pedra,y_pedra,durabilidade=1):
+        pygame.sprite.Sprite.__init__(self)
         #propriedades básicas
         self.durabilidade=durabilidade
         self.x=x_pedra
         self.y=y_pedra
+        self.image=0
         self.cor=(0,0,0)
         self.rect="" #objeto retângulo
     
     #desenhar a pedra na tela
+    def definir(self):
+        pass
     def mostrar (self):
-        self.cor=(132-self.durabilidade*3,132-self.durabilidade*3,132-self.durabilidade*3)
+        self.cor=(140-self.durabilidade*4,140-self.durabilidade*4,140-self.durabilidade*4)
         self.rect=pygame.draw.rect(tela,self.cor,(self.x,self.y,size_pedra,size_pedra))
     
     #função chamada para reduzir a durabilidade
     def quebrar (self, nome):
         self.durabilidade-=nome.dano_picareta
         if self.durabilidade<=0:
-            nome.items["Pedra"]+=1
+            nome.items["Pedra"]+=2
             rect_pedras.remove(self)
     def restaurar (self, nome):
         while (self.durabilidade<=31) and (nome.items["Pedra"]>0):
@@ -75,36 +84,55 @@ class Pedra:
             nome.items["Pedra"]-=1
 
 class Magnetita(Pedra):
-    def mostrar (self):
-        self.rect=pygame.draw.rect(tela,(128,0,128),(self.x,self.y,size_pedra,size_pedra))
+    def definir (self):
+        self.image=pygame.image.load("OneDrive\Documentos\Sprites\minerio_magnetita.png")
+        self.rect=self.image.get_rect()
+        self.rect.topleft = self.x, self.y
+        todas_as_sprites.add(self)
+    
     #função chamada para reduzir a durabilidade
     def quebrar (self,nome):
         nome.items["Magnetita"]+=1
-        nome.dano_picareta=1+(nome.items["Magnetita"]//2) #☼☼☼☼☼☼☼
+        nome.dano_picareta=1+(nome.items["Magnetita"]//2)
         rect_pedras.remove(self)
+        self.kill()
         print(nome.items)
 
 class Cobre(Pedra):
-    def mostrar (self):
-        self.rect=pygame.draw.rect(tela,(206,137,70),(self.x,self.y,size_pedra,size_pedra))
+    def definir (self):
+        self.image=pygame.image.load("OneDrive\Documentos\Sprites\minerio_cobre.png")
+        self.rect=self.image.get_rect()
+        self.rect.topleft = self.x, self.y
+        todas_as_sprites.add(self)
+    
     #função chamada para reduzir a durabilidade
     def quebrar (self,nome):
         nome.items["Cobre"]+=1
         rect_pedras.remove(self)
+        self.kill()
         print(nome.items)
 
 class Ouro(Pedra):
-    def mostrar (self):
-        self.rect=pygame.draw.rect(tela,(255,215,0),(self.x,self.y,size_pedra,size_pedra))
+    def definir (self):
+        self.image=pygame.image.load("OneDrive\Documentos\Sprites\minerio_ouro.png")
+        self.rect=self.image.get_rect()
+        self.rect.topleft = self.x, self.y
+        todas_as_sprites.add(self)
+    
     #função chamada para reduzir a durabilidade
     def quebrar (self,nome):
         nome.items["Ouro"]+=1
         rect_pedras.remove(self)
+        self.kill()
         print(nome.items)
 
 class Muro (Pedra):
-    def mostrar (self):
-        self.rect=pygame.draw.rect(tela,(255,0,0),(self.x,self.y,size_pedra,size_pedra))
+    def definir (self):
+        self.image=pygame.image.load("OneDrive\Documentos\Sprites\muro.png")
+        self.rect=self.image.get_rect()
+        self.rect.topleft = self.x, self.y
+        todas_as_sprites.add(self)
+    
     def quebrar (self, nome):
         pass
 
@@ -159,28 +187,32 @@ class Personagem:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JOGO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 jogador = Personagem(0,610)
+
 oponente = Personagem(650,610)
 
+todas_as_sprites = pygame.sprite.Group()
+
 mapa=[
-[M,N,X,N,N,N,N,N,N,N,N,N,N,N,N,N,20],
-[M,N,X,N,N,N,N,N,N,N,N,N,N,N,N,N,20],
-[M,N,X,N,N,N,N,N,N,N,N,N,N,N,N,N,20],
-[M,N,X,N,N,N,N,N,N,N,N,N,N,N,N,N,20],
-[M,N,X,X,X,X,N,N,N,N,N,N,N,N,N,N,20],
-[M,N,N,N,N,N,N,N,N,N,N,N,N,O,N,N,N],
-[M,N,N,N,N,N,N,N,N,N,N,N,N,O,N,N,N],
-[M,N,N,N,N,N,N,N,N,N,N,N,O,O,N,N,N],
-[M,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N,N],
-[M,N,N,N,N,N,N,10,10,10,N,N,N,N,N,N,N],
-[N,N,N,N,N,X,N,N,N,N,N,N,N,N,N,N,N],
-[N,N,X,X,X,X,N,N,N,C,N,N,N,N,N,N,N],
-[N,N,N,N,N,N,N,N,C,C,C,N,N,N,N,N,N],
-[N,N,N,N,N,N,N,N,N,C,N,N,N,N,M,M,M],
-[N,N,N,N,N,N,N,N,N,N,N,N,N,N,M,M,M],
-[N,N,N,N,N,N,N,N,N,N,N,N,N,N,M,M,M]]
+[12,O,12,22,M,N,12,12,X,N,N,N,N,N,N,N,N],
+[M,25,12,N,N,12,C,25,N,N,N,N,N,N,N,N,N],
+[25,N,20,12,N,12,20,12,X,N,N,N,N,N,N,N,N],
+[N,N,C,25,22,12,O,N,X,N,N,N,N,N,N,N,N],
+[N,12,N,N,12,12,20,M,X,N,N,N,N,N,N,N,N],
+[15,12,15,12,12,22,N,12,X,N,N,N,N,N,N,N,N],
+[M,22,12,22,C,12,N,25,N,N,N,N,N,N,N,N,N],
+[N,25,O,12,12,20,22,C,X,N,N,N,N,N,N,N,N],
+[22,10,22,N,N,12,12,N,X,N,N,N,N,N,N,N,N],
+[22,C,12,22,12,20,M,20,X,N,N,N,N,N,N,N,N],
+[12,22,N,N,20,12,22,12,X,N,N,N,N,N,N,N,N],
+[M,12,12,C,12,20,22,C,X,N,N,N,N,N,N,N,N],
+[12,20,N,12,20,N,12,12,X,N,N,N,N,N,N,N,N],
+[20,N,20,N,12,C,20,31,N,N,N,N,N,N,N,N,N],
+[N,N,N,12,22,20,N,12,X,N,N,N,N,N,N,N,N],
+[N,N,N,20,C,12,20,M,X,N,N,N,N,N,N,N,N]]
 
 rect_pedras=[]
 
+espelhar()
 mapear()
 
 # <<<outras variáveis>>>
@@ -190,18 +222,25 @@ velocidade=5
 relogio = pygame.time.Clock()
 
 while True:
+    #                          Setup de variáveis
     relogio.tick(30)
     tela.fill((0,0,0))
     jogador.picareta_ativa=False
     jogador.restaurar_ativa=False
     oponente.picareta_ativa=False
     oponente.restaurar_ativa=False
+    items_jogador=f"Magnetita: {jogador.items["Magnetita"]} | Cobre: {jogador.items["Cobre"]} | Ouro: {jogador.items["Ouro"]} | Pedras {jogador.items["Pedra"]}"
+    Placar_esquerdo = fonte.render(items_jogador, False, (255,255,255))
+    items_oponente=f"Magnetita: {oponente.items["Magnetita"]} | Cobre: {oponente.items["Cobre"]} | Ouro: {oponente.items["Ouro"]} | Pedra: {oponente.items["Pedra"]}"
+    Placar_direito = fonte.render(items_oponente, False, (255,255,255))
     
+    
+    
+    #                                 Resposta ao pressionar teclas
     for event in pygame.event.get():
         if event.type==QUIT:
             print(jogador.items)
             print(oponente.items)
-            print(rect_pedras)
             pygame.quit()
             exit()
         if event.type==KEYDOWN:
@@ -245,8 +284,8 @@ while True:
     #                                       mecânica de parar na borda
     if jogador.y<0:
         jogador.y=0
-    if jogador.y>(altura-y_jog):
-        jogador.y=altura-y_jog
+    if jogador.y>(altura-y_jog-30):
+        jogador.y=altura-y_jog-30
     if jogador.x<0:
         jogador.x=0
     if jogador.x>(largura-x_jog):
@@ -254,19 +293,20 @@ while True:
     
     if oponente.y<0:
         oponente.y=0
-    if oponente.y>(altura-y_jog):
-        oponente.y=altura-y_jog
+    if oponente.y>(altura-y_jog-30):
+        oponente.y=altura-y_jog-30
     if oponente.x<0:
         oponente.x=0
     if oponente.x>(largura-x_jog):
         oponente.x=largura-x_jog
     
     
-    #                    mostrar objetos na tela
+    #                                        mostrar objetos na tela
     jogador.mostrar()
     oponente.mostrar()
     for pedra in rect_pedras:
-        pedra.mostrar()
+        if pedra.image==0:
+            pedra.mostrar()
     
     
     #                                            colisão com pedras
@@ -305,7 +345,10 @@ while True:
         if oponente.restaurar_ativa==True:
             if oponente.picareta.colliderect(pedra.rect):
                     pedra.restaurar(oponente)
-
     
+    tela.blit(Placar_esquerdo,(0,648))
+    tela.blit(Placar_direito,(360,648))
+    todas_as_sprites.draw(tela)
+    todas_as_sprites.update()
     
     pygame.display.update()
