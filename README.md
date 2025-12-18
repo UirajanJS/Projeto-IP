@@ -33,6 +33,12 @@ FASE DE DESENVOLVIMENTO:
     <td><img src="src/screenshots/teste%20interação%20pedras.png" width="250"></td>
   </tr>
 </table>
+<table>
+  <tr>
+    <td><img src="src/screenshots/dinamica%20fisica%20quase%20pronta.png"</td>
+  </tr>
+</table>
+
 
 FASE DE IMPLEMENTAÇÃO:
 loading...
