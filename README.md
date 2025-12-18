@@ -49,12 +49,15 @@ O módulo sys foi utilizado para permitir o controle da tela(fechamento) atravé
 #A divisão de trabalho dentro do grupo (quem fez o quê);
 <table>
   <tr>
-    <th>QUEM</th>
+    <th>MEMBRO</th>
+    <th>FUNÇÃO INICIAL ATRIBUÍDA</th>
     <th>O QUE FEZ</th>
   </tr>
   <tr>
     <td>João Victor Presbytero </td>
-    <td></td>
+    <td></td>Designer de Nível</td>
+    <td></td>Responsável por montar o mapa inicial do jogo (o mundo de mineração), 
+    implementar componentes e solucionar problemas de integração</td>
   </tr>
   <tr>
     <td>Pierre Antônio da Silva</td>
