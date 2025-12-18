@@ -5,6 +5,7 @@ Título do projeto: MINECIN
 
 Membros da equipe: 
 João Victor Presbytero <jvpacqg>
+Maria Rosicler Lúcia de Lima <mrll>
 Pierre Antônio da Silva<pas2>
 Rafael Cardoso Clementino de Siqueira <rccs2>
 Uirajan José da Silva <ujs>
