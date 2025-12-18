@@ -118,8 +118,9 @@ sendo portanto destacados na tabela a seguir:
 #Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
 #Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
 #Qual foi o maior desafio enfrentado durante o projeto? Como vocês lidaram com ele?
-Organização sem dúvida foi um problema pois o tempo foi relativamente curto para desenvolver. Conseguimos estabelecer uma comunicação mais dinâmica na porção final
-do desenvolvimento e isso ajudou bastante na conclusão dos objetivos.
+O gerenciamento do tempo não ficou muito estabelecido, o que causou um certo atraso no desenvolvimento da parte gráfica, principalmente. 
+Para lidar com isso tornamos a comunicação mais dinâmica, onde cada participante fornecia exatamente o que estava fazendo, 
+onde estava fazendo e qual o andamento do processo a fim de nortear os outros integrantes.
 
 #Quais as lições aprendidas durante o projeto?
 Desenvolver um jogo por mais simples que seja,exige muita disciplina, tempo e organização, onde cada etapa otimizada através da cooperação leva a uma
