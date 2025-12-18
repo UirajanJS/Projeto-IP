@@ -13,6 +13,44 @@ Uirajan José da Silva <ujs>
 #A descrição da arquitetura do projeto:
   O MINECIn é um divertido jogo desenvolvido na linguagem python com a utilização da biblioteca pygame, onde o jogador assume o papel de um minerador astuto e ganancioso que não medirá esforços para conseguir todo o minério e todo o prestígio deste emocionante desafio para si. No MINECIn não há espaço para divisões, o egoísmo é sua única arma e ela deve ser usada para conseguir coletar a maior quantidade possível de minérios que podem ser de 3 tipos (ouro em sua forma impura(o mais valioso), cobre na forma de calcopirita(valor intermediário) e não menos importante, o ferro na forma de magnetita(menos valioso). Esta disputa irá adentrar nas mais temidas e desafiadoras minas que qualquer minerador experiente exitaria em pisar, em um ambiente hostil onde há dois mineradores ávidos por minério, apenas um deles será sagrado vencedor, aquele que conseguir o maior valor de minério possível.
 
+TIPO DE JOGO: “Top to Down”
+MULTIPLAYER: Sim
+ESTRUTURA VISUAL: Pixel Art
+TIPO DE CONTROLADOR: TECLADO
+MAPEAMENTO DO TECLADO:
+
+<table>
+<tr>
+  <th>TECLA</th>
+</tr>
+  <tr>
+    <td>JOGADOR 1</td>
+    <td>W</td>
+    <td>A</td>
+    <td>S</td>
+    <td>D</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>JOGADOR 2</td>
+    <td style="font-size: 12px;">↑</td>
+    <td style="font-size: 12px;">←</td>
+    <td style="font-size: 12px;">↓</td>
+    <td style="font-size: 12px;">→</td>
+    <td style="font-size: 12px;">0</td>
+  </tr>
+  
+  <tr>
+    <td>O QUE FAZ</td>
+    <td>movimenta o personagem para a frente</td>
+    <td>movimenta o personagem para a esquerda</td>
+    <td>movimenta o personagem para trás</td>
+    <td>movimenta o personagem para a direita</td>
+    <td>minerar</td>
+  </tr>
+</table>
+
+
 #Explicando como o código foi organizado
 
 
@@ -31,6 +69,11 @@ FASE DE DESENVOLVIMENTO:
 <table>
   <tr>
     <td><img src="src/screenshots/dinamica%20fisica%20quase%20pronta.png"</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img src="src/screenshots/Estado%20atual%20do%20jogo.png"</td>
   </tr>
 </table>
 
