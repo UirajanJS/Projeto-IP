@@ -53,23 +53,43 @@ O módulo sys foi utilizado para permitir o controle da tela(fechamento) atravé
     <th>FUNÇÃO INICIAL ATRIBUÍDA</th>
     <th>O QUE FEZ</th>
   </tr>
+  
   <tr>
     <td>João Victor Presbytero </td>
-    <td></td>Designer de Nível</td>
-    <td></td>Responsável por montar o mapa inicial do jogo (o mundo de mineração), 
-    implementar componentes e solucionar problemas de integração</td>
+    <td>Designer de Nível</td>
+    <td>Responsável por montar o mapa inicial do jogo (o mundo de mineração), 
+        Implementar componentes e solucionar problemas de integração
+    </td>
   </tr>
+  
+  <tr>
+    <td>Maria Rosicler Lúcia de Lima</td>
+    <td>Designer de Mecânicas</td>
+    <td>Lógica de mineração (interação com blocos), o sistema de inventário 
+    (contagem dos 3 coletáveis) e a condição de vitória/fim de jogo.
+    </td>
+  </tr
+
   <tr>
     <td>Pierre Antônio da Silva</td>
-    <td></td>
+    <td>Designer de Som</td>
+    <td>Edição dos sons e música do jogo</td>
   </tr>
+  
   <tr>
     <td>Rafael Cardoso Clementino de Siqueira</td>
-    <td></td>
+    <td>Arquiteto de Jogo / Programador Líder</td>
+    <td>Definiu a estrutura central (loop principal, estados), gerenciou a integração dos componentes
+        garantiu a comunicação entre os módulos (player, mundo, UI), e também solucionou os problemas de integração.
+    </td>
   </tr>
+  
   <tr>
     <td>Uirajan José da Silva</td>
-    <td></td>
+    <td>Designer de Assets</td>
+    <td>Criou os gráficos em pixel art, assets visuais, ícones dos coletáveis 
+        (sprites do jogador, blocos, os 3 coletáveis, mapa) e elementos de UI.
+    </td>
   </tr>
 </table>
 
