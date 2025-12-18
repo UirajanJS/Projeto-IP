@@ -11,11 +11,11 @@ Rafael Cardoso Clementino de Siqueira <rccs2>
 Uirajan José da Silva <ujs>
 
 #A descrição da arquitetura do projeto:
-O MINECIN é um divertido jogo desenvolvido na linguagem python com a utilização da biblioteca pygame, onde o jogador assume o papel
+  O MINECIN é um divertido jogo desenvolvido na linguagem python com a utilização da biblioteca pygame, onde o jogador assume o papel
 de um minerador astuto que busca dentre tantas façanhas alcançar a tão desejada riqueza, nem que para isso precise atrapalhar qualquer outro ganancioso que entre em seu caminho
-No MINECIN não há espaço para divisões, o egoísmo é sua única arma e ela deve ser usada para conseguir coletar a maior quantidade possível de minerios que podem ser de 3 tipos
+  No MINECIN não há espaço para divisões, o egoísmo é sua única arma e ela deve ser usada para conseguir coletar a maior quantidade possível de minerios que podem ser de 3 tipos
 (ouro em sua forma impura(o mais valioso), cobre na forma de calcopirita(valor intermediário) e não menos importante, o ferro na forma de magnetita(menos valioso)). 
-Esta disputa irá adentrar nas mais temidas e desafiadoras minas que qualquer minerador experiente exitaria em pisar, em um ambiente hostil onde há dois mineradores ávidos por minério, apenas um deles
+  Esta disputa irá adentrar nas mais temidas e desafiadoras minas que qualquer minerador experiente exitaria em pisar, em um ambiente hostil onde há dois mineradores ávidos por minério, apenas um deles
 será sagrado vencedor, aquele que conseguir o maior valor de minério possível.
 
 #Explicando como o código foi organizado
@@ -45,13 +45,14 @@ loading...
 
 #As ferramentas, bibliotecas, frameworks utilizados com as respectivas justificativas para o uso;
 *Linguagem de Programação: 
-A linguiagem de programação escolhida foi o Python, por conveniencia da disciplina de Introdução a lógica de programação(IP) 
+  A linguiagem de programação escolhida foi o Python, por conveniencia da disciplina de Introdução a lógica de programação(IP) 
 do primeiro período da disciplina de Ciência da Computação do Centro de Informática da UFPE.
 *Módulos:
-O principal módulo utilizado para o desenvolveomento foi o Pygame, por sugestão de praticidade e por permitir desenvolver num curto espaço de tempo, além da 
-flexibilidade de se trabalhar com arte pixelada que também facilita a usabilidade do módulo.
-O módulo random foi utilizado para gerar aleatoriedade(através da função randint()) no que tange a durabilidade das rochas e sua distribuição
-O módulo sys foi utilizado para permitir o controle da tela(fechamento) através da função exit().
+  O principal módulo utilizado para o desenvolveomento foi o Pygame, por sugestão de praticidade e por permitir desenvolver num curto espaço de tempo, além da 
+flexibilidade de se trabalhar com arte pixelada que também facilita a usabilidade do módulo. As artes(sprites) foram geradas utilizando a ferramenta web
+PIXILART disponível em: https://www.pixilart.com/
+  O módulo random foi utilizado para gerar aleatoriedade(através da função randint()) no que tange a durabilidade das rochas e sua distribuição
+  O módulo sys foi utilizado para permitir o controle da tela(fechamento) através da função exit().
 
 #A divisão de trabalho dentro do grupo (quem fez o quê);
 <table>
@@ -115,8 +116,11 @@ sendo portanto destacados na tabela a seguir:
   </tr>
 </table>
 
-#Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
+
+##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
 #Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
+Talvez tenha sido uma atribuição tardia das funções. Para lidar com isso estabelecemos metas de curto prazo. 
+
 #Qual foi o maior desafio enfrentado durante o projeto? Como vocês lidaram com ele?
 O gerenciamento do tempo não ficou muito estabelecido, o que causou um certo atraso no desenvolvimento da parte gráfica, principalmente. 
 Para lidar com isso tornamos a comunicação mais dinâmica, onde cada participante fornecia exatamente o que estava fazendo, 
