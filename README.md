@@ -16,7 +16,7 @@ Uirajan José da Silva <ujs>
   <table>
     <tr>
       <td>
-        <img src="src/midias_externas/valtboy.gif" width="100">
+        <img src="src/midias_externas/valtboy.gif" width="100" align="left">
       </td>
     </tr>
   </table>  
