@@ -21,7 +21,7 @@ MAPEAMENTO DO TECLADO:
 
 <table>
 <tr>
-  <th>TECLA</th>
+  <th colspan="6" align="center">TECLA</th>
 </tr>
   <tr>
     <td>JOGADOR 1</td>
