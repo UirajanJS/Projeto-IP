@@ -19,7 +19,36 @@ Uirajan José da Silva <ujs>
         <img src="src/midias_externas/valtboy.gif" width="100" align="left">
       </td>
     </tr>
-  </table>  
+  </table
+    
+CONTEXTO:  
+"Enquanto passava tranquilamente pelas ruas da UFPE,",
+        "Robocin foi surpeendido por um grupo de bandidos buscando seus fios de cobre",
+        "Completamente incapacitado, Robocin foi carregado a um lugar escuro e desconhecido da universidade",
+        "Lá, a última coisa que pode sentir foi o cortar da serra da makita que usavam para lhe lobotomizar",
+        ".     .     .",
+        "Quando acordou, estava desmaiado no tapete da entrada do CIN",
+        "Gritando por ajuda com os últimos circuitos que lhe restavam,",
+        "Robocin foi encontrado pelo professor Ricardo Massa",
+        "Após descobri-lo nesse estado precário, Ricardo não tardou em descartá-lo,",
+        "jogando-o direto nas profundezas das minas do CIN",
+        "Era um lugar assustador, sabia Robocin, rezervado apenas para as maiores atrocidades",
+        "sabia ele que jaziam lá os ossos daqueles que reprovavam em Introdução à programação",
+        'roídos incessantemente pelos dentes secos dos asuras chamados de "monitores chefes"',
+        "viam-se acorrentados Byte e Troia, forçados a participar no triste teatro de uma batalha sem fim",
+        "destinados a atrair mais vítimas para a armadilha dos monitores chefes",
+        "e no horizonte, um tenebroso cemitério, mais vasto do que o mar do tártaro,",
+        "preenchido em cada metro seu pelas carcassas de passadas cafeteiras",
+        "Nas profundezas da mina, Robocin encontrou com aquilo de mais absurdo, mais tenebroso, mais ...",
+        "encontrou outros Robocins. Seus passados eus, seus amigos ...",
+        "todos resultados da mesma sina,",
+        "todos tristes vitimas da makita.",
+        "Mas naquele lugar... Não eram mais Robocins.",
+        "Na mina, reina a lei dos fios de cobre, reina a lei daquele mais forte",
+        "das placas de Ouro, dos punhos de Magnetita, dos muros inquebráveis",
+        "reina a lei do tempo, e da ferrugem inevitável",
+        "a lei da escassez, e da fome",
+        "Será que Robocin conseguirá sobreviver?"  
   
 TIPO DE JOGO: “Top to Down”  
 MULTIPLAYER: Sim  
