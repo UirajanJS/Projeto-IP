@@ -174,7 +174,7 @@ FASE DE DESENVOLVIMENTO:
 FASE DE IMPLEMENTAÇÃO:  
 <table>
   <tr>
-    <td><img src/screenshots/tela inicial.png"</td>
+    <td><img src="src/screenshots/tela_inicial.png"></td>
   </tr>
 </table>  
 
