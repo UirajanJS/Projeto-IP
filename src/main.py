@@ -78,7 +78,6 @@ def tela_historia():
     tela_de_inicio()
 
 
-""" É permitido usar Surface e set.alpha? """
 def transicao():
     for i in range(0, 255, 15):                     #começa em 0 até 255, de 15 em 15 (utilizado para calcular a transparencia)
         tela.fill((0,0,0))                          #limpa a tela
@@ -117,6 +116,60 @@ def tela_de_inicio():
             if event.type == KEYDOWN:
                 if event.key == K_RETURN:  
                     rodando = False
+
+
+def calcula_pontuacao(pedras, magnetita, cobre, ouro):
+    pontuacao = (pedras//10) * 1 + magnetita * 1 + cobre * 2 + ouro * 5
+    return pontuacao #envia valor para quem chamou
+
+
+def tela_final(pontuacao1, pontuacao2): #parametros: pontuacao dos jogadores
+    fonte_titulo = pygame.font.Font(None, 74)
+    fonte_instrucao = pygame.font.Font(None, 36)
+    fonte_pontuacao = pygame.font.Font(None, 50)
+    fonte_vencedor = pygame.font.Font(None, 60)
+    rodando = True
+
+    transicao() #efeito fade para preto
+
+    #pontuacao
+    if pontuacao1 > pontuacao2:
+        mensagem_vencedor = "E o vencedor foi....\nJOGADOR 1!"
+    elif pontuacao2 > pontuacao1:
+        mensagem_vencedor = "E o vencedor foi...\nJOGADOR 2!"
+    else:
+        mensagem_vencedor = "E o vencedor foi...\n...\nNinguém venceu nem perdeu, foi Empate!"
+
+    while rodando:
+        tela.fill((0, 0, 0)) #mantem tela preta depois do efeito de transicao
+
+        #textos
+        titulo = fonte_titulo.render("Tempo Esgotado!", True, (255, 255, 255))
+        texto_pontuacao1 = fonte_pontuacao.render(f"Jogador 1: {pontuacao1}", True, (255, 255, 255))
+        texto_pontuacao2 = fonte_pontuacao.render(f"Jogador 2: {pontuacao2}", True, (255, 255, 255))
+        texto_vencedor = fonte_vencedor.render(mensagem_vencedor, True, (0, 255, 0)) #cor vitória verde
+        instrucao = fonte_instrucao.render("Pressione ENTER para reiniciar ou ESC para sair.", True, (255, 255, 255))
+
+        #centraliza textos
+        tela.blit(titulo, (largura//2 - titulo.get_width()//2, altura//4))
+        tela.blit(texto_pontuacao1, (largura//2 - instrucao.get_width()//2, altura//2 - 80))
+        tela.blit(texto_pontuacao2, (largura//2 - instrucao.get_width()//2, altura//2 - 30))
+        tela.blit(texto_vencedor, (largura//2 - instrucao.get_width()//2, altura//2 + 40))
+        tela.blit(instrucao, (largura//2 - instrucao.get_width()//2, altura//2 + 120))
+
+        pygame.display.flip() #atualiza tela
+
+        for evento in pygame.event.get(): #função que reage as entradas do jogador
+            if evento.type == QUIT: #fecha janela x
+                pygame.quit()
+                exit()
+            if evento.type == KEYDOWN:
+                if evento.key == K_RETURN: #enter
+                    rodando = False
+                if evento.key == K_ESCAPE: #esc
+                    pygame.quit()
+                    exit()
+
 
 def mapear():
     objeto=""
@@ -545,3 +598,22 @@ while True:
     todas_as_sprites.update()
     
     pygame.display.update()
+
+    
+    #QUANDO O TEMPO ACABAR
+    #Utiliza valores do dicionario items classe personagem
+    pontuacao1 = calcula_pontuacao (
+    x_personagem.items["Pedra"],
+    x_personagem.items["Magnetita"],
+    x_personagem.items["Cobre"],
+    x_personagem.items["Ouro"]
+    )   
+    
+    pontuacao2 = calcula_pontuacao (
+    y_personagem.items["Pedra"],
+    y_personagem.items["Magnetita"],
+    y_personagem.items["Cobre"],
+    y_personagem.items["Ouro"]
+    )
+
+    tela_final(pontuacao1, pontuacao2)
