@@ -177,12 +177,10 @@ sendo portanto destacados a seguir:
     	<ul>
         	<ul>onde foi usado</ul>
         </ul>
-        
     <ul>Condicionais(if/else/elif)</ul>
        	<ul>
         	<ul>onde foi usado</ul>
         </ul>
-        
     <ul>Funções</ul>
     	<ul>
         	<ul>Tela Inicial</ul>
