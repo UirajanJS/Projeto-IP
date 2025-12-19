@@ -15,8 +15,10 @@ Uirajan José da Silva <ujs>
   O MINECIn é um divertido jogo desenvolvido na linguagem python com a utilização da biblioteca pygame, onde o jogador assume o papel de ROBOCIN, mas o protagonista tem alguns problemas e precisa de você para poder sair de uma mina sinistra com sua saúde reestabelecida quer entender o contexto?  
   <table>
     <tr>
-<td><img src="src/midias externas/vaultboy.gif" width="250"></td>
-      </tr>
+      <td>
+        <img src="src/midias_externas/valtboy.gif" width="100">
+      </td>
+    </tr>
   </table>  
   
 TIPO DE JOGO: “Top to Down”  
