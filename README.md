@@ -176,6 +176,9 @@ sendo portanto destacados a seguir:
     <ul>Laços de Repetição(while/for)</ul>
     	<ul>
         	<ul>onde foi usado</ul>
+            	<li>para que foi usado</li>
+            <ul>onde foi usado</ul>
+            	<li>para que foi usado</li>
         </ul>
     <ul>Condicionais(if/else/elif)</ul>
        	<ul>
