@@ -175,11 +175,10 @@ sendo portanto destacados a seguir:
 	<li>Python</li>  
     <ul>Laços de Repetição(while/for)</ul>
     	<ul>
-        	<ul>onde foi usado
-            	<p>para que foi usado</p>
-             </ul>
-            <ul>onde foi usado
-            	<li><p>para que foi usado</p></li>
+        	<ul>onde e para que foi usado
+            	<ul>
+                	<li><p>descreva aqui</p></li>
+                </ul>
             </ul>
         </ul>
 </ul>
