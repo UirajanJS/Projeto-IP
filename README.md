@@ -52,8 +52,35 @@ MAPEAMENTO DO TECLADO:
 
 
 #Explicando como o código foi organizado
-
-
+```mermaid
+classDiagram TD;
+  pygame.sprite.Sprite <|-- Pedra
+  Pedra <|-- Magnetita
+  Pedra <|-- Cobre
+  Pedra <|-- Ouro
+  Pedra <|-- Muro
+  Pedra : +x_pedra
+  Pedra : +y_pedra
+  Pedra : +durabilidade=1
+  Pedra : +image
+  Pedra : +cor
+  Pedra : +rect
+  Pedra: +definir()
+  Pedra: +mostrar()
+  Pedra: +quebrar()
+  Pedra: +restaurar()
+      class Magnetita{
+          +image
+          +rect
+          +rect.topleft
+          +add
+          +definir()
+          +quebrar()
+      }
+      class Cobre{
+          -metodo_termino_mais_tarde()
+      }
+ ```
 #As capturas de tela do sistema funcionando para compor a galeria de projetos:
 FASE DE DESENVOLVIMENTO:
 <table>
@@ -146,8 +173,11 @@ sendo portanto destacados no diagrama a seguir:
 ```mermaid
 graph TD;
   Python --> Laços_de_Repetição;
-  Laços_de_Repetição --> Ciclo estrutural do jogo;
+  Laços_de_Repetição --> Ciclo_estrutural_do_jogo;
   Python --> Condicionais;
+  Python --> Funções;
+  Funções --> Tela_de_Menu_Inicial;
+  
 ```
 
 ##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
