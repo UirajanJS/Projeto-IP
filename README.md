@@ -161,9 +161,9 @@ sendo portanto destacados na tabela a seguir:
 teste mermaid
 
 '''mermad
-Graph TD;
-Python --> Laços de Repetição;
-Python --> Condicionais;
+graph TD;
+  Python --> Laços de Repetição;
+  Python --> Condicionais;
 '''
 
 
