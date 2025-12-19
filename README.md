@@ -52,7 +52,10 @@ MAPEAMENTO DO TECLADO:
 
 
 #Explicando como o código foi organizado
+
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CLASSES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
 
 ```mermaid
 classDiagram
@@ -67,8 +70,8 @@ classDiagram
   Icone <|-- Icone_cobre
   Icone <|-- Icone_ouro
   Icone_magnetita: +definir()
-  Icone_cobre: +definir
-  Icone_ouro: +definir
+  Icone_cobre: +definir()
+  Icone_ouro: +definir()
   pygame.sprite.Sprite <|-- Pedra
   Pedra <|-- Magnetita
   Pedra <|-- Cobre
