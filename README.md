@@ -160,7 +160,7 @@ sendo portanto destacados na tabela a seguir:
 
 teste mermaid
 
-'''mermad
+'''mermaid
 graph TD;
   Python --> Laços de Repetição;
   Python --> Condicionais;
