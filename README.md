@@ -175,20 +175,24 @@ sendo portanto destacados a seguir:
 	<li>Python</li>  
     <ul>Laços de Repetição(while/for)</ul>
     	<ul>
-        	<ul>onde foi usado</ul>
+        	<ul>onde foi usado
             	<li>para que foi usado</li>
-            <ul>onde foi usado</ul>
+             </ul>
+            <ul>onde foi usado
             	<li>para que foi usado</li>
+            </ul>
         </ul>
-    <ul>Condicionais(if/else/elif)</ul>
-       	<ul>
-        	<ul>onde foi usado</ul>
-        </ul>
-    <ul>Funções</ul>
+    <ul>Condicionais if/else/elif</ul>
     	<ul>
-        	<ul>Tela Inicial</ul>
+        	<ul>onde foi usado
+            	<li>para que foi usado</li>
+             </ul>
+            <ul>onde foi usado
+            	<li>para que foi usado</li>
+            </ul>
         </ul>
 </ul>
+
 
 
 
