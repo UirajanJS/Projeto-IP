@@ -24,20 +24,20 @@ MAPEAMENTO DO TECLADO:
   <th colspan="6" align="center">TECLA</th>
 </tr>
   <tr>
-    <td>JOGADOR 1</td>
-    <td>W</td>
-    <td>A</td>
-    <td>S</td>
-    <td>D</td>
-    <td>F</td>
+    <td width= "100" align= "center">JOGADOR 1</td>
+    <td width= "100" align= "center">W</td>
+    <td width= "100" align= "center">A</td>
+    <td width= "100" align= "center">S</td>
+    <td width= "100" align= "center">D</td>
+    <td width= "100" align= "center">F</td>
   </tr>
   <tr>
     <td>JOGADOR 2</td>
-    <td style="font-size: 12px;">↑</td>
-    <td style="font-size: 12px;">←</td>
-    <td style="font-size: 12px;">↓</td>
-    <td style="font-size: 12px;">→</td>
-    <td style="font-size: 12px;">0</td>
+    <td width= "100" align= "center" style="font-size:12px">↑</td>
+    <td width= "100" align= "center" style="font-size:12px">←</td>
+    <td width= "100" align= "center" style="font-size:12px">↓</td>
+    <td width= "100" align= "center" style="font-size:12px">→</td>
+    <td width= "100" align= "center" style="font-size:12px">0</td>
   </tr>
   
   <tr>
