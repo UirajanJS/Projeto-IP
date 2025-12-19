@@ -52,8 +52,23 @@ MAPEAMENTO DO TECLADO:
 
 
 #Explicando como o código foi organizado
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CLASSES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
 ```mermaid
 classDiagram
+  Personagem : x_personagem
+  Personagem : y_personagem
+  Personagem : +mostrar()
+  Personagem : +minerar()
+  pygame.sprite.Sprite <|--Icone
+  Icone : +x_pos
+  Icone : +y_pos
+  Icone <|-- Icone_magnetita
+  Icone <|-- Icone_cobre
+  Icone <|-- Icone_ouro
+  Icone_magnetita: +definir()
+  Icone_cobre: +definir
+  Icone_ouro: +definir
   pygame.sprite.Sprite <|-- Pedra
   Pedra <|-- Magnetita
   Pedra <|-- Cobre
@@ -70,24 +85,25 @@ classDiagram
   Pedra: +quebrar()
   Pedra: +restaurar()
       class Magnetita{
-          +image
-          +rect
-          +rect.topleft
-          +add
           +definir()
           +quebrar()
       }
       class Cobre{
-          -nome
-          -definir()
-          -quebrar()
+          +definir()
+          +quebrar()
 
       }
       class Ouro{
-          -definir()
-          -quebrar()
+          +definir()
+          +quebrar()
 
       }
+      class Muro{
+          +definir()
+          +quebrar()
+
+      }
+
  ```
 #As capturas de tela do sistema funcionando para compor a galeria de projetos:
 FASE DE DESENVOLVIMENTO:
