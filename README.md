@@ -53,7 +53,7 @@ MAPEAMENTO DO TECLADO:
 
 #Explicando como o código foi organizado
 ```mermaid
-classDiagram TD;
+classDiagram
   pygame.sprite.Sprite <|-- Pedra
   Pedra <|-- Magnetita
   Pedra <|-- Cobre
