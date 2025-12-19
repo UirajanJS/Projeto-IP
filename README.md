@@ -159,11 +159,11 @@ sendo portanto destacados na tabela a seguir:
 </table>
 
 
-'''mermaid
+```mermaid
 graph TD;
   Python --> Lacos_de_Repeticao;
   Python --> Condicionais;
-'''
+```
 
 
 ##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
