@@ -170,22 +170,16 @@ PIXILART disponível em: https://www.pixilart.com/
 #Os conceitos que foram apresentados durante a disciplina e utilizados no projeto (indicando onde foram usados);
   No projeto, excetuando a parte de programação orientada a objeto, todas os conceitos aprendidos foram utilizados direta ou indiretamente,
 sendo portanto destacados a seguir:
+<ul>
+    <ul>Python</ul>
+    	<ul>Laços de Repetição(while/for)</ul>
+        	<li>onde foi usado</li>
+        <ul>Condicionais(if/else/elif)</ul>
+        	<li>onde foi usado</li>
+        <ul>Funções</ul>
+        	<li>Tela_de_Menu_Inicial</li>            
+</ul>
 
-  <ul>
-    <li>Python</li>
-    <ul>
-      <li>Laços_de_Repetição</li>
-    </ul>
-  </ul>
-
-
-   
-   --> Ciclo_estrutural_do_jogo;
-  Python --> Condicionais;
-  Python --> Funções;
-  Funções --> Tela_de_Menu_Inicial;
-  
-```
 
 ##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
 #Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
