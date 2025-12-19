@@ -24,9 +24,9 @@ MAPEAMENTO DO TECLADO:
   <th colspan="6" align="center">TECLA</th>
 </tr>
   <tr>
-    <td width= "100" align= "center">JOGADOR 1</td>
-    <td width= "100" align= "center">W</td>
-    <td width= "100" align= "center">A</td>
+    <td width= "200" align= "center">JOGADOR 1</td>
+    <td width= "200" align= "center">W</td>
+    <td width= "200" align= "center">A</td>
     <td width= "100" align= "center">S</td>
     <td width= "100" align= "center">D</td>
     <td width= "100" align= "center">F</td>
