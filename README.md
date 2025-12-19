@@ -42,11 +42,11 @@ MAPEAMENTO DO TECLADO:
   
   <tr>
     <td>O QUE FAZ</td>
-    <td>movimenta o personagem para a frente</td>
-    <td>movimenta o personagem para a esquerda</td>
-    <td>movimenta o personagem para trás</td>
-    <td>movimenta o personagem para a direita</td>
-    <td>minerar</td>
+    <td align = "center">movimenta o personagem para a frente</td>
+    <td align = "center">movimenta o personagem para a esquerda</td>
+    <td align = "center">movimenta o personagem para trás</td>
+    <td align = "center">movimenta o personagem para a direita</td>
+    <td align = "center">minerar</td>
   </tr>
 </table>
 
