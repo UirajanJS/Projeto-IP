@@ -142,26 +142,12 @@ PIXILART disponível em: https://www.pixilart.com/
 
 #Os conceitos que foram apresentados durante a disciplina e utilizados no projeto (indicando onde foram usados);
 No projeto, excetuando a parte de programação orientada a objeto, todas os conceitos aprendidos foram utilizados direta ou indiretamente,
-sendo portanto destacados na tabela a seguir:
-<table>
-  <tr>
-    <th>CONCEITO APRENDIDO</th>
-    <th>ONDE FOI UTILIZADO</th>
-  </tr>
-  <tr>
-    <td>LAÇOS DE REPETIÇÃO</td>
-    <td>CICLO DE EXECUÇÃO DO JOGO</td>
-  </tr>
-  <tr>
-    <td>CONDICIONAIS</td>
-    <td></td>
-  </tr>
-</table>
+sendo portanto destacados no diagrama a seguir:
 
 
 ```mermaid
 graph TD;
-  Python --> Lacos_de_Repeticao;
+  Python --> Laços_de_Repetição;
   Python --> Condicionais;
 ```
 ##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
