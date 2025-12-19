@@ -169,11 +169,18 @@ PIXILART disponível em: https://www.pixilart.com/
 
 #Os conceitos que foram apresentados durante a disciplina e utilizados no projeto (indicando onde foram usados);
   No projeto, excetuando a parte de programação orientada a objeto, todas os conceitos aprendidos foram utilizados direta ou indiretamente,
-sendo portanto destacados no diagrama a seguir:
-```mermaid
-graph TD;
-  Python --> Laços_de_Repetição;
-  Laços_de_Repetição --> Ciclo_estrutural_do_jogo;
+sendo portanto destacados a seguir:
+
+  <ul>
+    <li>Python</li>
+    <ul>
+      <li>Laços_de_Repetição</li>
+    </ul>
+  </ul>
+
+
+   
+   --> Ciclo_estrutural_do_jogo;
   Python --> Condicionais;
   Python --> Funções;
   Funções --> Tela_de_Menu_Inicial;
