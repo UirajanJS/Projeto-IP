@@ -1,17 +1,17 @@
-# Projeto-IP
-Projeto final da disciplina de Introdução á Programação
+# Projeto-IP  
+Projeto final da disciplina de Introdução á Programação  
 
-Título do projeto: MINECIn
+Título do projeto: MINECIn  
 
 Membros da equipe: 
-João Victor Presbytero <jvpacqg>
-Maria Rosicler Lúcia de Lima <mrll>
-Pierre Antônio da Silva<pas2>
-Rafael Cardoso Clementino de Siqueira <rccs2>
-Uirajan José da Silva <ujs>
+João Victor Presbytero <jvpacqg>  
+Maria Rosicler Lúcia de Lima <mrll>  
+Pierre Antônio da Silva<pas2>  
+Rafael Cardoso Clementino de Siqueira <rccs2>  
+Uirajan José da Silva <ujs>  
 
 #A descrição da arquitetura do projeto:
-  O MINECIn é um divertido jogo desenvolvido na linguagem python com a utilização da biblioteca pygame, onde o jogador assume o papel de um minerador astuto e ganancioso que não medirá esforços para conseguir todo o minério e todo o prestígio deste emocionante desafio para si. No MINECIn não há espaço para divisões, o egoísmo é sua única arma e ela deve ser usada para conseguir coletar a maior quantidade possível de minérios que podem ser de 3 tipos (ouro em sua forma impura(o mais valioso), cobre na forma de calcopirita(valor intermediário) e não menos importante, o ferro na forma de magnetita(menos valioso). Esta disputa irá adentrar nas mais temidas e desafiadoras minas que qualquer minerador experiente exitaria em pisar, em um ambiente hostil onde há dois mineradores ávidos por minério, apenas um deles será sagrado vencedor, aquele que conseguir o maior valor de minério possível.
+  O MINECIn é um divertido jogo desenvolvido na linguagem python com a utilização da biblioteca pygame, onde o jogador assume o papel de um minerador astuto e ganancioso que não medirá esforços para conseguir todo o minério e todo o prestígio deste emocionante desafio para si. No MINECIn não há espaço para divisões, o egoísmo é sua única arma e ela deve ser usada para conseguir coletar a maior quantidade possível de minérios que podem ser de 3 tipos (ouro em sua forma impura(o mais valioso), cobre na forma de calcopirita(valor intermediário) e não menos importante, o ferro na forma de magnetita(menos valioso). Esta disputa irá adentrar nas mais temidas e desafiadoras minas que qualquer minerador experiente exitaria em pisar, em um ambiente hostil onde há dois mineradores ávidos por minério, apenas um deles será sagrado vencedor, aquele que conseguir o maior valor de minério possível.  
 
 TIPO DE JOGO: “Top to Down”  
 MULTIPLAYER: Sim  
@@ -51,7 +51,7 @@ MAPEAMENTO DO TECLADO:
 </table>
 
 
-#Explicando como o código foi organizado
+#Explicando como o código foi organizado  
 
 
 CLASSES
@@ -107,8 +107,11 @@ classDiagram
       }
 
  ```
-#As capturas de tela do sistema funcionando para compor a galeria de projetos:
-FASE DE DESENVOLVIMENTO:
+
+
+#As capturas de tela do sistema funcionando para compor a galeria de projetos:  
+
+FASE DE DESENVOLVIMENTO:  
 <table>
   <tr>
     <td><img src="src/screenshots/teste%20de%20frames%20para%20os%20objetos.png" width="250"></td>
@@ -128,24 +131,24 @@ FASE DE DESENVOLVIMENTO:
   <tr>
     <td><img src="src/screenshots/Estado%20atual%20do%20jogo.png"</td>
   </tr>
-</table>
+</table>  
 
 
-FASE DE IMPLEMENTAÇÃO:
-Colocar aqui o print da tela definitiva
+FASE DE IMPLEMENTAÇÃO:  
+Colocar aqui o print da tela definitiva  
 
-#As ferramentas, bibliotecas, frameworks utilizados com as respectivas justificativas para o uso;
-*Linguagem de Programação: 
+#As ferramentas, bibliotecas, frameworks utilizados com as respectivas justificativas para o uso;  
+*Linguagem de Programação:  
   A linguiagem de programação escolhida foi o Python, por conveniencia da disciplina de Introdução a lógica de programação(IP) 
-do primeiro período da disciplina de Ciência da Computação do Centro de Informática da UFPE.
-*Módulos:
+do primeiro período da disciplina de Ciência da Computação do Centro de Informática da UFPE.  
+*Módulos:  
   O principal módulo utilizado para o desenvolveomento foi o Pygame, por sugestão de praticidade e por permitir desenvolver num curto espaço de tempo, além da 
 flexibilidade de se trabalhar com arte pixelada que também facilita a usabilidade do módulo. As artes(sprites) foram geradas utilizando a ferramenta web
-PIXILART disponível em: https://www.pixilart.com/
-  O módulo random foi utilizado para gerar aleatoriedade(através da função randint()) no que tange a durabilidade das rochas e sua distribuição
-  O módulo sys foi utilizado para permitir o controle da tela(fechamento) através da função exit().
+PIXILART disponível em: https://www.pixilart.com/.  
+  O módulo random foi utilizado para gerar aleatoriedade(através da função randint()) no que tange a durabilidade das rochas e sua distribuição.    
+  O módulo sys foi utilizado para permitir o controle da tela(fechamento) através da função exit().  
 
-#A divisão de trabalho dentro do grupo (quem fez o quê);
+#A divisão de trabalho dentro do grupo (quem fez o quê);  
 <table>
   <tr>
     <th>MEMBRO</th>
@@ -193,47 +196,47 @@ PIXILART disponível em: https://www.pixilart.com/
 </table>
 
 
-#Os conceitos que foram apresentados durante a disciplina e utilizados no projeto (indicando onde foram usados);
+#Os conceitos que foram apresentados durante a disciplina e utilizados no projeto (indicando onde foram usados);  
   No projeto, excetuando a parte de programação orientada a objeto, todas os conceitos aprendidos foram utilizados direta ou indiretamente,
-sendo portanto destacados a seguir:
+sendo portanto destacados a seguir:  
 
-Python: Características Básicas
-  *Laços de Repetição (while / for)
-     Onde e para que foi usado:
-        for: Utilizado na função tela_historia() para percorrer strings e criar o efeito de digitação, e na função mapear() para percorrer a matriz do mapa.
-        while True: O "Game Loop" principal que mantém a janela aberta e o jogo processando frames continuamente.
-  *Estruturas Condicionais (if / elif / else) 
-     Onde e para que foi usado:
-        Utilizado para mapear as entradas do teclado (movimentação e ações de minerar).
-        Verificação de colisões entre o rect do jogador e os blocos de minério.
-        Controle de limites da tela para impedir que o personagem saia da área visível.
-  *Coleções (Listas e Dicionários)
-     Onde e para que foi usado:
-        Listas: A variável mapa armazena a estrutura do cenário como uma matriz. A lista rect_pedras armazena as instâncias dos objetos de minério para renderização.
-        Dicionários: Usado em self.items dentro da classe Personagem para gerenciar o inventário, onde cada chave é o nome do mineral e o valor é a quantidade coletada.
-  *Funções (def)
-     Onde e para que foi usado:
-        Modularização do sistema de geração de mapa (construir, espelhar, mapear) e funções de interface (tela_de_inicio, transicao).
-        Programação Orientada a Objetos (Classes e Herança) Onde e para que foi usado:
-  *Classes: Estruturação dos objetos Personagem e Pedra.
-     Herança: As classes Magnetita, Cobre e Ouro herdam de Pedra, reaproveitando a lógica de durabilidade, mas definindo suas próprias imagens e recompensas específicas (Polimorfismo).
-  *Bibliotecas Externas (Import)
-     Onde e para que foi usado:
-        pygame: Motor gráfico do jogo.
-        random: Para sortear a posição e o tipo dos minérios, garantindo que o mapa seja gerado de forma aleatória em cada execução.
-        sys: Para controlar a janela de execução do jogo.
+Python: Características Básicas  
+  *Laços de Repetição (while / for)  
+     Onde e para que foi usado:  
+        for: Utilizado na função tela_historia() para percorrer strings e criar o efeito de digitação, e na função mapear() para percorrer a matriz do mapa.  
+        while True: O "Game Loop" principal que mantém a janela aberta e o jogo processando frames continuamente.  
+  *Estruturas Condicionais (if / elif / else)  
+     Onde e para que foi usado:  
+        Utilizado para mapear as entradas do teclado (movimentação e ações de minerar).  
+        Verificação de colisões entre o rect do jogador e os blocos de minério.  
+        Controle de limites da tela para impedir que o personagem saia da área visível.  
+  *Coleções (Listas e Dicionários)  
+     Onde e para que foi usado:  
+        Listas: A variável mapa armazena a estrutura do cenário como uma matriz. A lista rect_pedras armazena as instâncias dos objetos de minério para renderização.  
+        Dicionários: Usado em self.items dentro da classe Personagem para gerenciar o inventário, onde cada chave é o nome do mineral e o valor é a quantidade coletada.  
+  *Funções (def)  
+     Onde e para que foi usado:  
+        Modularização do sistema de geração de mapa (construir, espelhar, mapear) e funções de interface (tela_de_inicio, transicao).  
+        Programação Orientada a Objetos (Classes e Herança) Onde e para que foi usado:  
+  *Classes: Estruturação dos objetos Personagem e Pedra.    
+     Herança: As classes Magnetita, Cobre e Ouro herdam de Pedra, reaproveitando a lógica de durabilidade, mas definindo suas próprias imagens e recompensas específicas (Polimorfismo).  
+  *Bibliotecas Externas (Import)  
+     Onde e para que foi usado:  
+        pygame: Motor gráfico do jogo.  
+        random: Para sortear a posição e o tipo dos minérios, garantindo que o mapa seja gerado de forma aleatória em cada execução.  
+        sys: Para controlar a janela de execução do jogo.  
 
-##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
-#Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
-  Talvez tenha sido uma atribuição tardia das funções. Para lidar com isso estabelecemos metas de curto prazo. 
+##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:  
+#Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?  
+  Talvez tenha sido uma atribuição tardia das funções. Para lidar com isso estabelecemos metas de curto prazo.  
 
-#Qual foi o maior desafio enfrentado durante o projeto? Como vocês lidaram com ele?
-  O gerenciamento do tempo não ficou muito estabelecido, o que causou um certo atraso no desenvolvimento da parte gráfica, principalmente. 
+#Qual foi o maior desafio enfrentado durante o projeto? Como vocês lidaram com ele?  
+  O gerenciamento do tempo não ficou muito estabelecido, o que causou um certo atraso no desenvolvimento da parte gráfica, principalmente.  
   Para lidar com isso tornamos a comunicação mais dinâmica, onde cada participante fornecia exatamente o que estava fazendo, 
-onde estava fazendo e qual o andamento do processo a fim de nortear os outros integrantes.
+onde estava fazendo e qual o andamento do processo a fim de nortear os outros integrantes.  
 
-#Quais as lições aprendidas durante o projeto?
+#Quais as lições aprendidas durante o projeto?  
   Desenvolver um jogo por mais simples que seja,exige muita disciplina, tempo e organização, onde cada etapa otimizada através da cooperação leva a uma
-maior propensão da aplicação ser bem sucedida.
-  A curva de aprendizado da ferramenta utilizada é baixa, permitindo o desenvolvimento de jogos simples em poucos dias. 
+maior propensão da aplicação ser bem sucedida.  
+  A curva de aprendizado da ferramenta utilizada é baixa, permitindo o desenvolvimento de jogos simples em poucos dias.  
 
