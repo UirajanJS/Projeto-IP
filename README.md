@@ -171,20 +171,77 @@ PIXILART disponível em: https://www.pixilart.com/
   No projeto, excetuando a parte de programação orientada a objeto, todas os conceitos aprendidos foram utilizados direta ou indiretamente,
 sendo portanto destacados a seguir:
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório IP - Python</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .top-level { list-style-type: square; font-weight: bold; font-size: 1.2em; color: #2c3e50; }
+        .feature { font-weight: bold; color: #e67e22; margin-top: 10px; }
+        .description { font-weight: normal; color: #555; margin-left: 20px; }
+        ul ul { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
 <ul>
-	<ul>Python
-    	<ul>Laços de Repetição(while/for)
-        	<ul>
-        		<li><p>descreva aqui</p></li>
+    <li class="top-level">Python: Introdução à Lógica de Programação</li>
+    <li class="feature">Laços de Repetição (while / for)</li>
+    <ul>
+        <li><strong>Onde e para que foi usado:</strong>
+            <ul>
+                <li><p><strong>for:</strong> Utilizado na função <code>tela_historia()</code> para percorrer as strings da história letra por letra (efeito de digitação) e na função <code>mapear()</code> para percorrer as listas aninhadas (matriz) que definem o layout do mapa.</p></li>
+                <li><p><strong>while True:</strong> Utilizado como o "Game Loop" principal, mantendo o jogo rodando infinitamente até que o usuário feche a janela.</p></li>
             </ul>
-        </ul>
-        <ul>Condicional
-        	<ul>
-        		<li><p>descreva aqui</p></li>
+        </li>
+    </ul>
+    <li class="feature">Estruturas Condicionais (if / elif / else)</li>
+    <ul>
+        <li><strong>Onde e para que foi usado:</strong>
+            <ul>
+                <li><p>Utilizado para o processamento de entradas do teclado (movimentação), detecção de colisões entre os retângulos dos personagens e minérios, e para verificar a durabilidade dos blocos na função <code>quebrar()</code>.</p></li>
             </ul>
-        </ul>
-    </ul> 
+        </li>
+    </ul>
+    <li class="feature">Coleções (Listas e Dicionários)</li>
+    <ul>
+        <li><strong>Onde e para que foi usado:</strong>
+            <ul>
+                <li><p><strong>Listas (Arrays):</strong> A variável <code>mapa</code> é uma matriz (lista de listas) que armazena a posição dos blocos. A lista <code>rect_pedras</code> armazena os objetos de minério ativos na tela.</p></li>
+                <li><p><strong>Dicionários:</strong> O atributo <code>self.items</code> na classe <code>Personagem</code> guarda o inventário (Magnetita, Cobre, Ouro, Pedra), associando o nome do item à quantidade coletada.</p></li>
+            </ul>
+        </li>
+    </ul>
+    <li class="feature">Funções (Def)</li>
+    <ul>
+        <li><strong>Onde e para que foi usado:</strong>
+            <ul>
+                <li><p>Utilizadas para modularizar o código, como <code>mapear()</code> para gerar o mundo, <code>transicao()</code> para efeitos visuais e <code>minerar()</code> para definir o comportamento de interação do jogador com o cenário.</p></li>
+            </ul>
+        </li>
+    </ul>
+    <li class="feature">Programação Orientada a Objetos (Classes e Herança)</li>
+    <ul>
+        <li><strong>Onde e para que foi usado:</strong>
+            <ul>
+                <li><p><strong>Classes:</strong> Definem o blueprint do <code>Personagem</code> e da <code>Pedra</code>.</p></li>
+                <li><p><strong>Herança:</strong> As classes <code>Magnetita</code>, <code>Cobre</code> e <code>Ouro</code> herdam as propriedades básicas da classe pai <code>Pedra</code>, mas personalizam suas próprias imagens e recompensas ao serem coletadas.</p></li>
+            </ul>
+        </li>
+    </ul>
+    <li class="feature">Importação de Bibliotecas Externas</li>
+    <ul>
+        <li><strong>Onde e para que foi usado:</strong>
+            <ul>
+                <li><p><strong>Pygame:</strong> Biblioteca principal para renderização de gráficos, controle de tempo (frames) e sons.</p></li>
+                <li><p><strong>Random:</strong> Usada na função <code>construir()</code> para gerar a distribuição aleatória de minérios no mapa, garantindo que cada partida seja diferente.</p></li>
+            </ul>
+        </li>
+    </ul>
 </ul>
+</body>
+</html>
 
 
 ##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
