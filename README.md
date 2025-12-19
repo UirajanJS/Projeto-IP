@@ -162,7 +162,7 @@ teste mermaid
 
 '''mermaid
 graph TD;
-  Python --> Laços de Repetição;
+  Python --> Lacos de Repeticao;
   Python --> Condicionais;
 '''
 
