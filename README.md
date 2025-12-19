@@ -162,8 +162,8 @@ teste mermaid
 
 '''mermad
 Graph TD;
-Python --> Laços de Repetição
-Python --> Condicionais
+Python --> Laços de Repetição;
+Python --> Condicionais;
 '''
 
 
