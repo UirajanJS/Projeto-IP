@@ -172,7 +172,11 @@ FASE DE DESENVOLVIMENTO:
 
 
 FASE DE IMPLEMENTAÇÃO:  
-Colocar aqui o print da tela definitiva  
+<table>
+  <tr>
+    <td><img src/screenshots/tela inicial.png"</td>
+  </tr>
+</table>  
 
 #As ferramentas, bibliotecas, frameworks utilizados com as respectivas justificativas para o uso;  
 *Linguagem de Programação:  
