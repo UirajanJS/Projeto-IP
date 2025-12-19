@@ -164,8 +164,6 @@ graph TD;
   Python --> Lacos_de_Repeticao;
   Python --> Condicionais;
 ```
-
-
 ##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
 #Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
 Talvez tenha sido uma atribuição tardia das funções. Para lidar com isso estabelecemos metas de curto prazo. 
