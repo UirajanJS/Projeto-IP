@@ -157,15 +157,14 @@ sendo portanto destacados na tabela a seguir:
     <td></td>
   </tr>
 </table>
-Here is a simple flow chart:
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+teste mermaid
+
+'''mermad
+Graph TD;
+Python --> Laços de Repetição
+Python --> Condicionais
+'''
 
 
 ##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
