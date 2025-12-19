@@ -8,6 +8,7 @@ pygame.init()
 largura=680
 altura=680
 tela=pygame.display.set_mode((largura, altura))
+pygame.dispay.set_caption("MINECIn")
 
 tela_inicial = pygame.image.load("tela_inicial.png") #Essa linha carrega a imagem com o caminho para ela
 tela_inicial = pygame.transform.scale(tela_inicial, (largura, altura)) #redimensiona a imagem para ocupar a tela do jogo
