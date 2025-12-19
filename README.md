@@ -166,6 +166,14 @@ graph TD;
   Python --> Condicionais;
 '''
 
+```mermaid
+graph TD;
+    Python-->Laços de Repetição;
+    Python-->Condicionais;
+    Python-->Listas;
+    Python-->Tuplas;
+```
+
 
 ##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
 #Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
