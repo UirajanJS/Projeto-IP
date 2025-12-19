@@ -54,8 +54,7 @@ MAPEAMENTO DO TECLADO:
 #Explicando como o código foi organizado
 
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CLASSES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-
+CLASSES
 
 ```mermaid
 classDiagram
