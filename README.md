@@ -9,6 +9,7 @@ Maria Rosicler Lúcia de Lima <mrll>
 Pierre Antônio da Silva<pas2>
 Rafael Cardoso Clementino de Siqueira <rccs2>
 Uirajan José da Silva <ujs>
+Maria Rosicler Lúcia de Lima <mrll>
 
 #A descrição da arquitetura do projeto:
   O MINECIn é um divertido jogo desenvolvido na linguagem python com a utilização da biblioteca pygame, onde o jogador assume o papel de um minerador astuto e ganancioso que não medirá esforços para conseguir todo o minério e todo o prestígio deste emocionante desafio para si. No MINECIn não há espaço para divisões, o egoísmo é sua única arma e ela deve ser usada para conseguir coletar a maior quantidade possível de minérios que podem ser de 3 tipos (ouro em sua forma impura(o mais valioso), cobre na forma de calcopirita(valor intermediário) e não menos importante, o ferro na forma de magnetita(menos valioso). Esta disputa irá adentrar nas mais temidas e desafiadoras minas que qualquer minerador experiente exitaria em pisar, em um ambiente hostil onde há dois mineradores ávidos por minério, apenas um deles será sagrado vencedor, aquele que conseguir o maior valor de minério possível.
