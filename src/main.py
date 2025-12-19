@@ -7,6 +7,7 @@ pygame.init()
 
 largura=680
 altura=680
+pygame.display.set_caption("MINECIn")
 tela=pygame.display.set_mode((largura, altura))
 
 tela_inicial = pygame.image.load("tela_inicial.png") #Essa linha carrega a imagem com o caminho para ela
