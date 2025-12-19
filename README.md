@@ -172,16 +172,20 @@ PIXILART disponível em: https://www.pixilart.com/
 sendo portanto destacados a seguir:
 
 <ul>
-	<li>Python</li>  
-    <ul>Laços de Repetição(while/for)</ul>
-    	<ul>
-        	<ul>onde e para que foi usado
-            	<ul>
-                	<li><p>descreva aqui</p></li>
-                </ul>
+	<ul>Python
+    	<ul>Laços de Repetição(while/for)
+        	<ul>
+        		<li><p>descreva aqui</p></li>
             </ul>
         </ul>
+        <ul>Condicional
+        	<ul>
+        		<li><p>descreva aqui</p></li>
+            </ul>
+        </ul>
+    </ul> 
 </ul>
+
 
 ##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
 #Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
