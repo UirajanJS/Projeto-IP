@@ -175,7 +175,7 @@ sendo portanto destacados a seguir:
 	<li>Python</li>  
     <ul>Laços de Repetição(while/for)</ul>
         <ul>
-        	<li>onde foi usado</li>
+        	<ul>onde foi usado</ul>
         </ul>
     <ul>Condicionais(if/else/elif)</ul>
        	<ul>
@@ -183,6 +183,7 @@ sendo portanto destacados a seguir:
         </ul>
     <ul>Funções</ul>      
 </ul>
+
 
 
 
