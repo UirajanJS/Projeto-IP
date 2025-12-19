@@ -170,7 +170,6 @@ PIXILART disponível em: https://www.pixilart.com/
 #Os conceitos que foram apresentados durante a disciplina e utilizados no projeto (indicando onde foram usados);
   No projeto, excetuando a parte de programação orientada a objeto, todas os conceitos aprendidos foram utilizados direta ou indiretamente,
 sendo portanto destacados a seguir:
-
 <ul>
 	<li>Python</li>  
     <ul>Laços de Repetição(while/for)</ul>
@@ -184,12 +183,12 @@ sendo portanto destacados a seguir:
         </ul>
     <ul>Condicionais if/else/elif</ul>
     	<ul>
-        	<ul>onde foi usado
-            	<li>para que foi usado</li>
-             </ul>
-            <ul>onde foi usado
-            	<li>para que foi usado</li>
-            </ul>
+        	<li>onde foi usado
+            	<ul>para que foi usado</ul>
+             </li>
+            <li>onde foi usado
+            	<ul>para que foi usado</ul>
+            </li>
         </ul>
 </ul>
 
