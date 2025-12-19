@@ -179,7 +179,7 @@ sendo portanto destacados a seguir:
             	<p>para que foi usado</p>
              </ul>
             <ul>onde foi usado
-            	<p>para que foi usado</p>
+            	<li><p>para que foi usado</p></li>
             </ul>
         </ul>
 </ul>
