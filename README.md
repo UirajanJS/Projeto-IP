@@ -141,26 +141,26 @@ PIXILART disponível em: https://www.pixilart.com/
 
 
 #Os conceitos que foram apresentados durante a disciplina e utilizados no projeto (indicando onde foram usados);
-No projeto, excetuando a parte de programação orientada a objeto, todas os conceitos aprendidos foram utilizados direta ou indiretamente,
+  No projeto, excetuando a parte de programação orientada a objeto, todas os conceitos aprendidos foram utilizados direta ou indiretamente,
 sendo portanto destacados no diagrama a seguir:
-
-
 ```mermaid
 graph TD;
   Python --> Laços_de_Repetição;
+  Laços_de_Repetição --> Ciclo estrutural do jogo;
   Python --> Condicionais;
 ```
+
 ##Os desafios e erros enfrentados no decorrer do projeto e as lições aprendidas. Para tanto, respondam às seguintes perguntas:
 #Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
-Talvez tenha sido uma atribuição tardia das funções. Para lidar com isso estabelecemos metas de curto prazo. 
+  Talvez tenha sido uma atribuição tardia das funções. Para lidar com isso estabelecemos metas de curto prazo. 
 
 #Qual foi o maior desafio enfrentado durante o projeto? Como vocês lidaram com ele?
-O gerenciamento do tempo não ficou muito estabelecido, o que causou um certo atraso no desenvolvimento da parte gráfica, principalmente. 
-Para lidar com isso tornamos a comunicação mais dinâmica, onde cada participante fornecia exatamente o que estava fazendo, 
+  O gerenciamento do tempo não ficou muito estabelecido, o que causou um certo atraso no desenvolvimento da parte gráfica, principalmente. 
+  Para lidar com isso tornamos a comunicação mais dinâmica, onde cada participante fornecia exatamente o que estava fazendo, 
 onde estava fazendo e qual o andamento do processo a fim de nortear os outros integrantes.
 
 #Quais as lições aprendidas durante o projeto?
-Desenvolver um jogo por mais simples que seja,exige muita disciplina, tempo e organização, onde cada etapa otimizada através da cooperação leva a uma
+  Desenvolver um jogo por mais simples que seja,exige muita disciplina, tempo e organização, onde cada etapa otimizada através da cooperação leva a uma
 maior propensão da aplicação ser bem sucedida.
-A curva de aprendizado da ferramenta utilizada é baixa, permitindo o desenvolvimento de jogos simples em poucos dias. 
+  A curva de aprendizado da ferramenta utilizada é baixa, permitindo o desenvolvimento de jogos simples em poucos dias. 
 
