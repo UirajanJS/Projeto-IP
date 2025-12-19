@@ -152,6 +152,10 @@ sendo portanto destacados na tabela a seguir:
     <td>LAÇOS DE REPETIÇÃO</td>
     <td>CICLO DE EXECUÇÃO DO JOGO</td>
   </tr>
+  <tr>
+    <td>CONDICIONAIS</td>
+    <td></td>
+  </tr>
 </table>
 
 
