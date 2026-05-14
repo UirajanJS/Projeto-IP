@@ -4,11 +4,11 @@ Projeto final da disciplina de Introdução á Programação
 Título do projeto: MINECIn  
 
 Membros da equipe: 
-João Victor Presbytero <jvpacqg>  
-Maria Rosicler Lúcia de Lima <mrll>  
-Pierre Antônio da Silva<pas2>  
-Rafael Cardoso Clementino de Siqueira <rccs2>  
-Uirajan José da Silva <ujs>  
+João Victor Presbytero <jvpacqg>
+Pierre Antônio da Silva<pas2>
+Rafael Cardoso Clementino de Siqueira <rccs2>
+Uirajan José da Silva <ujs>
+Maria Rosicler Lúcia de Lima <mrll>
 
 #A descrição da arquitetura do projeto:
   
