@@ -1,0 +1,85 @@
+import { abrirBanco } from '../../apoio/sqlite.js';
+
+export class SqliteProdutoRepository {
+  constructor(caminho) {
+    this.db = abrirBanco(caminho);
+  }
+
+  async listar() {
+    const stmt = this.db.prepare('SELECT sku, nome, quantidade FROM produtos ORDER BY sku ASC');
+    const linhas = stmt.all();
+
+    return linhas.map((linha) => ({
+      sku: linha.sku,
+      nome: linha.nome,
+      quantidade: Number(linha.quantidade)
+    }));
+  }
+
+  async buscarPorSku(sku) {
+    const stmt = this.db.prepare('SELECT sku, nome, quantidade FROM produtos WHERE sku = ?');
+    const linha = stmt.get(sku);
+
+    if (!linha) {
+      return null;
+    }
+
+    return {
+      sku: linha.sku,
+      nome: linha.nome,
+      quantidade: Number(linha.quantidade)
+    };
+  }
+
+  async baixarEstoque(sku, quantidade) {
+    // Transação imediata com bloqueio reservado para escrita concorrente
+    this.db.exec('BEGIN IMMEDIATE');
+
+    try {
+      // Baixa condicional atômica no banco de dados
+      const updateStmt = this.db.prepare(
+        'UPDATE produtos SET quantidade = quantidade - ? WHERE sku = ? AND quantidade >= ?'
+      );
+      const resultado = updateStmt.run(quantidade, sku, quantidade);
+
+      // Se nenhuma linha foi afetada, investiga a causa dentro da mesma transação
+      if (resultado.changes === 0) {
+        const checkStmt = this.db.prepare('SELECT quantidade FROM produtos WHERE sku = ?');
+        const produtoAtual = checkStmt.get(sku);
+
+        if (!produtoAtual) {
+          const erro = new Error(`Produto não encontrado para o SKU: ${sku}`);
+          erro.codigo = 'PRODUTO_INEXISTENTE';
+          throw erro;
+        } else {
+          const erro = new Error(
+            `Saldo insuficiente para o SKU ${sku}. Disponível: ${produtoAtual.quantidade}, Solicitado: ${quantidade}`
+          );
+          erro.codigo = 'SALDO_INSUFICIENTE';
+          throw erro;
+        }
+      }
+
+      // Obtém os dados do produto atualizado após o UPDATE com sucesso
+      const selectStmt = this.db.prepare('SELECT sku, nome, quantidade FROM produtos WHERE sku = ?');
+      const produtoAtualizado = selectStmt.get(sku);
+
+      // Efetiva as alterações
+      this.db.exec('COMMIT');
+
+      return {
+        sku: produtoAtualizado.sku,
+        nome: produtoAtualizado.nome,
+        quantidade: Number(produtoAtualizado.quantidade)
+      };
+    } catch (erro) {
+      // Garante rollback em caso de exceção de domínio ou de concorrência
+      this.db.exec('ROLLBACK');
+      throw erro;
+    }
+  }
+
+  close() {
+    this.db.close();
+  }
+}
